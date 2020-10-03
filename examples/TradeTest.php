@@ -19,11 +19,11 @@
  */
 
 /**
- * @name TradeTest
+ * @name Trade
  * @main       nlog\TradeTest
- * @author     nlog
+ * @author     CrowBaldeYT
  * @api        4.0.0
- * @version    1.0.0
+ * @version    3.0.1
  * @softDepend TradeAPI
  */
 
@@ -65,7 +65,7 @@ class TradeTest extends PluginBase {
 			$prop = new TraderProperties();
 			$prop->maxTradeTier = 3;
 			$prop->tradeTier = 2;
-			$prop->traderName = "[Test] Trade API";
+			$prop->traderName = "§7[§a§lSchwarz Markt§r§7]§r ";
 			$prop->xp = intval($args[0] ?? mt_rand(0, 50));
 
 			TradeAPI::getInstance()->sendWindow($sender, $this->recipes, $prop);
